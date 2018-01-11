@@ -1,0 +1,22 @@
+{
+  "name": "blockchain",
+  "version": "1.0.0",
+  "description": "A simple blockchain with javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neuerituale/Blockchain-Javascript-ES6-module.git"
+  },
+  "author": "Julian Winkel <code@neuerituale.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neuerituale/Blockchain-Javascript-ES6-module/issues"
+  },
+  "homepage": "https://github.com/neuerituale/Blockchain-Javascript-ES6-module#readme",
+  "dependencies": {
+    "tiny-sha256": "^1.0.2"
+  }
+}

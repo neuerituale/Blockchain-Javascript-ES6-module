@@ -35,14 +35,12 @@ export class Block {
 
 }
 
-
 export default class Blockchain extends Array{
 
 	constructor() {
 		super();
 		this.push(Blockchain.createGenesisBlock());
 	}
-
 
 	/**
 	 * Create A Genesis Block
@@ -52,7 +50,6 @@ export default class Blockchain extends Array{
 		return new Block(0, new Date, 'Genesis Block', '0');
 	}
 
-
 	/**
 	 * Return Last Block from Blockchain
 	 * @returns {*}
@@ -60,7 +57,6 @@ export default class Blockchain extends Array{
 	getLastBlock(){
 		return this[this.length - 1];
 	}
-
 
 	/**
 	 * Add a new Block to Blockchain
@@ -80,7 +76,6 @@ export default class Blockchain extends Array{
 		this.push(block);
 		return block;
 	}
-
 
 	/**
 	 * Check Blockchain integrity

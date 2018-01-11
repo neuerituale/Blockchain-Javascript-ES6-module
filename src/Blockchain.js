@@ -23,6 +23,7 @@ export class Block {
 
 	/**
 	 * Calculate Hash
+	 * 'this.previousHash' is the magic in a Blockchain
 	 */
 	calculateHash() {
 		return window.encrypter(

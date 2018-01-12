@@ -17,7 +17,7 @@ export default class App {
 	constructor (){
 
 		// encrypter global
-		window.encrypter = sha256;
+		window.myHashFunction = sha256;
 
 		// Blockchain
 		this.blockchain = new Blockchain();

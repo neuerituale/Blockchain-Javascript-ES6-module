@@ -22,15 +22,19 @@ export class Block {
 	}
 
 	/**
-	 * Calculate Hash
+	 * * Calculate Hash
 	 * 'this.previousHash' is the magic in a Blockchain
+	 * @returns {string}
 	 */
 	calculateHash() {
-		return window.encrypter(
+
+		return window.myHashFunction(
+
 			this.key +
 			this.timestamp.toISOString() +
 			JSON.stringify(this.data).toString() +
 			this.previousHash
+
 		).toString();
 	}
 
@@ -53,7 +57,7 @@ export default class Blockchain extends Array{
 
 	/**
 	 * Return Last Block from Blockchain
-	 * @returns {*}
+	 * @returns {Block}
 	 */
 	getLastBlock(){
 		return this[this.length - 1];

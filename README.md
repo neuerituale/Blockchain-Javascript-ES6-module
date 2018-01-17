@@ -1,15 +1,16 @@
 # Blockchain-Javascript-ES6-module
-A simple blockchain with javascript
+A simple blockchain with javascript as Node.js Module.
+Use ```test.html``` to play around!
 
 ## Usage
-Save your encrypter function in ```window.encrypter```
+Save your Hash function in ```window.myHashFunction```
 
 ### initialize
 Initialize the Blockchain.
 
 ```js
-window.encrypter = sha256(); /* your encrypter function */
-let blockchain = new Blockchain(); /* Blockchain is an Array. */
+window.myHashFunction = sha256(); /* your Hash function */
+let blockchain = new Blockchain(); /* Blockchain extends Array. */
 ```
 
 ### add Data (create new Block)
